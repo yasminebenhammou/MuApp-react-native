@@ -18,21 +18,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.museum.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription ": "Location is required to find out where you are",
+        "NSBluetoothAlwaysUsageDescription  ": "Bluetooth is required to find where you are"
+
+      }
     },
     "android": {
+      "package": "com.cbb.Muapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.cbb.Muapp"
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDSEax7QwLsCK5pMLrDbJn5wOOAjNGZxik"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "a2195661-1c8c-4a3a-ad19-0ccc5aacd515"
+        "projectId": "a93caf7c-cd1a-4bf4-bbb5-c06bdd87b3f3"
       }
     }
   }
